@@ -1,0 +1,302 @@
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+/*---------------------------- GENERAL STYLING ----------------------------*/
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    height: 100%;
+    background-color: #F1F0EA;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    color:#34495e;
+}
+
+section{
+    min-width:100%;
+    height: 100%;
+    max-height: 100%;
+    float:left;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------- NAVIGATION BUTTON ----------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+#nav{
+    position: fixed;
+    margin-left:1%;
+    margin-top:1%;
+    z-index: 15;
+}
+
+#btn{
+  width:60px;
+  height:52px;
+  border-radius:60px;
+  background:#2ecc71;
+  padding-top:8px;
+}
+
+.btn{
+  width:60px;
+  height:60px;
+  margin-top:10px;
+  border-radius:60px;
+  background:#1abc9c;
+  transform:matrix(1,0,0,1,0,-800);
+}
+
+#btn,.btn{
+    cursor: pointer;
+}
+
+.stripe{
+  width:40px;
+  height:1px;
+  background:#ffffff;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+/*---------------------------- CONTAINER STYLE ----------------------------*/
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+
+svg {
+    position: absolute;
+    height: 700px; 
+}
+
+.conStyle {
+    margin: 0 auto;
+    min-width: 310px; 
+    height: 500px; 
+}
+
+#conMale{
+  float:left;
+  width: 50%;
+  height: 80%;
+}
+
+#conFemale{
+  float:left;
+  width: 50%;
+  height: 80%;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*---------------------------- ARTICLE TEXT STYLE ----------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+.text{  
+    width:19%;
+    height: 96%;
+    line-height: 1.44em;
+    font-size: 1em;
+    padding:2%;
+}
+
+.text > h1 {
+    margin-top: 130px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+
+.text-even{
+    position: absolute;
+    left:10%;
+}
+
+.text-odd{
+    position: absolute;
+    left:70%;
+}
+
+#intro > article {
+    width: 50%;
+    font-size: 1.4em; 
+    margin: 200px auto;
+    line-height: 1.4em;
+    font-style: italic;
+}
+
+#intro > article > h1 {
+    margin-bottom: 30px;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*---------------------------- CHART STYLE ----------------------------*/
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
+
+.chart{
+    width:55%;
+    height: 100%;
+    display:block;
+    margin: 0 auto;
+}
+
+.highcharts-container {
+    overflow: visible!important;
+    margin-top: 50px;
+}
+
+.chart-even{
+     position: absolute;
+     left:35%;
+}
+
+.chart-odd{
+    position: absolute;
+    left:10%;
+}
+
+.highcharts-background{
+    fill: none;
+}
+
+.highcharts-grid > path {
+    stroke: rgba(181, 154, 101, 0.4);
+}
+
+.highcharts-legend-item {
+    display: block;
+    margin-right: 30px;
+}
+
+.highcharts-legend-item > rect{
+    cursor: pointer;
+}
+
+.highcharts-legend-item > text{
+    font-family: Arial,sans-serif!important;
+}
+
+.highcharts-yaxis-labels > text:last-of-type{
+    fill: rgba(0,0,0,0)!important;
+}
+
+#highcharts-8 .highcharts-yaxis-labels > text:last-of-type{
+    fill: #606060!important;
+}
+
+.highcharts-grid > path:last-of-type{
+    stroke: rgba(0,0,0,0)!important;
+}
+
+#highcharts-8 .highcharts-grid > path:last-of-type{
+    stroke: rgba(181, 154, 101, 0.4)!important;
+}
+
+.highcharts-title{
+    font-family: Arial,sans-serif!important;
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*---------------------------- PIE CHART LEGEND ----------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+
+#pieLegend {
+  width: 600px;
+  margin:0 auto;
+}
+
+.itemLegend {
+  display: inline-block;
+  margin: 2px 10px;
+}
+
+.colorItem {
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+}
+
+.itemLegend > p {
+  margin-left: 3px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 12px;
+  color: #333333;
+}
+
+.item1 {
+  background-color: rgb(231, 76, 60);
+}
+
+.item2 {
+  background-color: rgb(230, 126, 34);
+}
+
+.item3 {
+  background-color: rgb(144, 237, 125);
+}
+
+.item4 {
+  background-color: rgb(26, 188, 156);
+}
+
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/*---------------------------- VIDEO PLAYER ----------------------------*/
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+
+#video {
+    overflow: hidden;
+}
+
+.flowplayer {
+    height: 100%;
+    display: block; 
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.flowplayer .fp-controls { 
+    background-color: rgba(0, 0, 0, 0.16)
+}
+
+.flowplayer .fp-timeline { 
+    background-color: rgba(241, 240, 234, 1)
+}
+
+.flowplayer .fp-progress { 
+    background-color: rgba(219, 0, 0, 0.3)
+
+}
+.flowplayer .fp-buffer { 
+    background-color: rgba(241, 240, 234, 1)
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Informotion</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="icons/favicon.ico"/>
+    <link rel="stylesheet" href="http://releases.flowplayer.org/6.0.3/skin/functional.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="http://releases.flowplayer.org/6.0.3/flowplayer.min.js"></script>
+    
+</head>
+<body>
+  
+  
+   <!-------------------------------------------------------------------------->
+   <!-------------------------------------------------------------------------->
+   <!------------------------------- NAVIGATION ------------------------------->
+   <!-------------------------------------------------------------------------->
+   <!-------------------------------------------------------------------------->
+    
+     
+    <div id="nav">
+        <div id="btn">
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+        </div>
+        <div id="one" class="btn"><img src="icons/video.png"/></div>
+        <div id="two" class="btn"><img src="icons/intro.png"/></div>
+        <div id="three" class="btn"><img src="icons/onderwijs.png"/></div>
+        <div id="four" class="btn"><img src="icons/leeftijd.png"/></div>
+        <div id="five" class="btn"><img src="icons/geslacht.png"/></div>
+        <div id="six" class="btn"><img src="icons/tijdlijn.png"/></div>
+    </div>
+
+  
+   <!--------------------------------------------------------------------->
+   <!--------------------------------------------------------------------->
+   <!------------------------------- VIDEO ------------------------------->
+   <!--------------------------------------------------------------------->
+   <!--------------------------------------------------------------------->
+   
+   
+    <section id="video">
+        <article>
+            <div class="flowplayer no-volume " data-embed="false" data-fullscreen="false">
+                <video>
+                    <source type="video/webm" src="video/video.mp4">
+                    <source type="video/mp4" src="video/video.mp4">
+                </video>
+            </div>
+        </article>
+    </section>
+    
+    
+    <!---------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------->
+    <!------------------------------- INTRODUCTION ------------------------------->
+    <!---------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------->
+   
+   
+    <section id="intro">
+        <article>
+            <p>Welkom bij onze interactieve visualisatie. Hieronder bevinden zich 4 grafieken met data over gewicht. Binnen de grafieken kan je filteren tussen ernstig overgewicht, matig overgewicht, normaal gewicht en ondergewicht. De eerste grafiek gaat over het verband tussen overgewicht en opleidingsniveau dus neem snel een kijkje! Verder wens ik je veel kijk plezier naar de verdere 3 grafieken. </p>
+        </article>
+    </section>
+
+   
+   <!------------------------------------------------------------------------->
+   <!------------------------------------------------------------------------->
+   <!------------------------------- EDUCATION ------------------------------->
+   <!------------------------------------------------------------------------->
+   <!------------------------------------------------------------------------->
+   
+   
+    <section id="education">
+        <article class="text text-even">
+            <h1>Onderwijsniveau en Gewicht</h1>
+            <p>Als je een kijkje neemt naar de grafiek kan je zien dat hoe hoger het opleidingsniveau, des te minder het overgewicht. Dit kan bijvoorbeeld komen door de lifestyle. Zo kan je speculeren dat hoger opgeleiden zich meer bewust zijn van een gezonde levensstijl dan lager opgeleiden. </p>
+        </article>
+        <article class="chart chart-even bar">
+            <div id="conEdu" class="conStyle"></div>
+        </article>
+    </section>
+    
+
+    <!------------------------------------------------------------------->
+    <!------------------------------------------------------------------->
+    <!------------------------------- AGE ------------------------------->
+    <!------------------------------------------------------------------->
+    <!------------------------------------------------------------------->
+    
+    
+    <section id="age">
+        <article class="chart chart-odd bar">
+            <div id="conAge" class="conStyle"></div>
+        </article>
+        <article class="text text-odd">
+            <h1>Leeftijd en Gewicht</h1>
+            <p>In deze grafiek kan je zien dat overgewicht vooral toeneemt met de leeftijd. Dus hoe ouder, des te meer overgewicht. Dit kan bijvoorbeeld komen door het afnemen van beweging naar mate de mens ouder wordt. Maar als je goed kijkt zie je een afwijking in het patroon. Namelijk bij de leeftijds categorie 75+ neemt het overgewicht juist weer af. Dit kan komen doordat senioren minder voedsel binnen krijgen of nodig hebben. </p>
+        </article>
+    </section>
+    
+    
+    <!------------------------------------------------------------------->
+    <!------------------------------------------------------------------->
+    <!------------------------------- SEX ------------------------------->
+    <!------------------------------------------------------------------->
+    <!------------------------------------------------------------------->
+    
+    
+    <section id="sex">
+        <article class="text text-even">
+            <h1>Geslacht en Gewicht</h1>
+            <p>In eerste instantie lijkt er weinig verschil te zijn tussen de twee cirkel diagrammen, maar toch hebben de vrouwen iets meer overgewicht over het algemeen dan mannen. Dit kan komen door bijvoorbeeld het hormonen stelsel, maar dat kunnen we niet met zekerheid zeggen. Ook houden vrouwen vaak overtollig vet over na de bevalling van een baby. </p>
+        </article>
+        <article class="chart chart-even">
+            <div id="conMale"></div>
+            <div id="conFemale"></div>
+            <div id="pieLegend">
+                <div class="itemLegend">
+                    <div class="colorItem item1"></div>
+                    <p>Ernstig overgewicht</p>
+                </div>
+
+                <div class="itemLegend">
+                    <div class="colorItem item2"></div>
+                    <p>Matig overgewicht</p>
+                </div>
+
+                <div class="itemLegend">
+                    <div class="colorItem item3"></div>
+                    <p>Normaal gewicht</p>
+                </div>
+
+                <div class="itemLegend">
+                    <div class="colorItem item4"></div>
+                    <p>Onder gewicht</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+    <!------------------------------- YEAR ------------------------------->
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+    
+    
+    <section id="year">
+        <article class="text text-odd">
+            <h1>Gemiddelde gewicht door de jaren heen</h1>
+            <p>In deze grafiek kan je zien dat vooral matig overgewicht bij 20+ is gestegen in de laatste jaren. Hoewel ernstig overgewicht zich juist weer op de vlakte houdt. Matig overgewicht komt het meeste voor van de vier categoriën. Waardoor? Dit zou misschien aan de bewerking van voedsel kunnen liggen, of de goedkope prijs van fastfood.
+</p>
+        </article>
+        <article class="chart chart-odd bar">
+            <div id="conYear" class="conStyle"></div>
+        </article>
+    </section>
+    
+    
+    <!-------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------->
+    <!------------------------------- JAVASCRIPT LINKS ------------------------------->
+    <!-------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------->
+
+
+    <script src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+
+</html>
